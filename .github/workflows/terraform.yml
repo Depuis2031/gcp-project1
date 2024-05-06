@@ -27,17 +27,20 @@ jobs:
       uses: hashicorp/setup-terraform@v1
 
     - name: Authenticate to Google Cloud
-      uses: google-github-actions/auth@v0.4.0  # Updated to the latest version as an example
+      uses: google-github-actions/auth@v0.4.0
       with:
         workload_identity_provider: '//iam.googleapis.com/projects/287702920783/locations/global/workloadIdentityPools/tf-pool'
         service_account: 'tf-pool@advance-terraform-406410.iam.gserviceaccount.com'
 
     - name: Terraform Init
       run: terraform init
+      working-directory: ./001
 
     - name: Terraform Plan
       run: terraform plan
+      working-directory: ./001
 
     - name: Terraform Apply
       run: terraform apply -auto-approve
+      working-directory: ./001
       if: github.ref == 'refs/heads/main'
