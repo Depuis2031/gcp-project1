@@ -3,7 +3,7 @@ variable "region" {
   default = "europe-west9"
 }
 variable "zone" {
-  #default = #"europe-west9-c"
+  default = "europe-west9"
 }
 variable "project_id" {
    type        = string
