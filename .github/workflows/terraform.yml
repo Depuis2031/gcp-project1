@@ -37,7 +37,7 @@ jobs:
       working-directory: ./001
 
     - name: Terraform Plan
-      run: terraform plan
+      run: TF_LOG=DEBUG terraform plan -out=tfplan
       working-directory: ./001
 
     - name: Terraform Apply
