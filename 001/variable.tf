@@ -8,5 +8,4 @@ variable "zone" {
 variable "project_id" {
    type        = string
   default      = "advance-terraform-406410"
-  description  = #Google Cloud Project ID
 }
