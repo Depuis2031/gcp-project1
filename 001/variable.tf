@@ -1,9 +1,9 @@
 
 variable "region" {
-  default = "europe-west9"
+  default = "us-central1"
 }
 variable "zone" {
-  default = "europe-west9-b"
+  default = "us-central1-b"
 }
 variable "project_id" {
    type        = string
