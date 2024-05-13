@@ -32,10 +32,10 @@ jobs:
         CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
       uses: google-github-actions/auth@v0.4.0
       with:
-        workload_identity_provider: "//iam.googleapis.com/projects/287702920783/locations/global/workloadIdentityPools/tf-pool/compute.googleapis.com"
+        workload_identity_provider: '//iam.googleapis.com/projects/287702920783/locations/global/workloadIdentityPools/tf-pool/'
         service_account: "tf-pool@advance-terraform-406410.iam.gserviceaccount.com"
         # Assume the audience is the same as the provider ID for simplicity, double-check your specific requirements
-        audience: "//iam.googleapis.com/projects/287702920783/locations/global/workloadIdentityPools/tf-pool/compute.googleapis.com"
+        audience: '//iam.googleapis.com/projects/287702920783/locations/global/workloadIdentityPools/tf-pool'
 
     - name: Terraform Init
       run: terraform init
