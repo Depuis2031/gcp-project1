@@ -38,7 +38,7 @@ jobs:
       with:
         workload_identity_provider: "projects/287702920783/locations/global/workloadIdentityPools/terra-pool/providers/terra-provider"
         #workload_identity_provider: "//iam.googleapis.com/projects/287702920783/locations/global/workloadIdentityPools/terra-pool/providers/terra-provider"
-        #create_credentials_file: true
+        create_credentials_file: true
         service_account: "terra-510@advance-terraform-406410.iam.gserviceaccount.com"
         #token_format: "access_token"
         #access_token_lifetime: "120s"
