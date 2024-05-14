@@ -42,7 +42,7 @@ jobs:
         token_format: "access_token"
         access_token_lifetime: "120s"
         # Assume the audience is the same as the provider ID for simplicity, double-check your specific requirements
-        # audience: '://iam.googleapis.com/projects/287702920783/locations/global/workloadIdentityPools/001-pool'
+        audience: "://iam.googleapis.com/projects/287702920783/locations/global/workloadIdentityPools/001-pool/subject/SUBJECT_ATTRIBUTE_VALUE"
                   
     - name: Echo stuff
       run: printenv
