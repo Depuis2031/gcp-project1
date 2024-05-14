@@ -36,7 +36,7 @@ jobs:
         CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
       uses: google-github-actions/auth@v0.4.0
       with:
-        workload_identity_provider: "principal://iam.googleapis.com/projects/287702920783/locations/global/workloadIdentityPools/001-pool/subject/SUBJECT_ATTRIBUTE_VALUE"
+        workload_identity_provider: "://iam.googleapis.com/projects/287702920783/locations/global/workloadIdentityPools/001-pool/subject/SUBJECT_ATTRIBUTE_VALUE"
         create_credentials_file: true
         service_account: "id-01-tf@advance-terraform-406410.iam.gserviceaccount.com"
         token_format: "access_token"
