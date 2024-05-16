@@ -64,10 +64,10 @@ jobs:
       run: TF_LOG=DEBUG terraform plan -out=tfplan
       # working-directory: ./001
 
-    - name: Terraform Apply
-      run: terraform apply -auto-approve
-      # working-directory: ./001
-      if: github.ref == 'refs/heads/main'
+    # - name: Terraform Apply
+    #   run: terraform apply -auto-approve
+    #    working-directory: ./001
+    #   if: github.ref == 'refs/heads/main'
 
     - name: Terraform Destroy
       run: terraform destroy -auto-approve
